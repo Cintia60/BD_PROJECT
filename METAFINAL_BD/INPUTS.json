@@ -1,0 +1,146 @@
+
+//registar paciente 
+{
+    "cc": "123177890",
+    "nif": 121122789,
+    "nome": "Carla Dias",
+    "data_de_nascimento": "1990-05-15",
+    "morada": "Rua das Flores, 123",
+    "telefone": 11167774,
+    "genero": "Feminino",
+    "mail": "dias@example.com",
+    "senha": "dias123",
+    "contacto_emergencia":11199321,
+    "nome_ce": "Bia Dias",
+    "grau_de_parentesco": "Mãe",
+    "grupo_sanguineo": "AB"
+}
+
+//registar assistente 
+
+{
+    "cc": "44444444",
+    "nif": 111111122,
+    "nome": "AS.Marco Santos",
+    "data_de_nascimento": "1999-05-10",
+    "morada": "Avenida Cabral, 223",
+    "telefone": "9996912",
+    "genero": " Masculino",
+    "mail": "marco.santos@example.com",
+    "senha": "marco123"
+}
+
+
+//registar enfermeira 
+
+{
+    "cc": "123456778",
+    "nif": 987654311,
+    "nome": "Enf. Catia Santos",
+    "data_de_nascimento": "1988-03-15",
+    "morada": "Rua das Flores, 446",
+    "telefone": "913334444",
+    "genero": "Feminino",
+    "mail": "catia.santos@example.com",
+    "senha": "catia123",
+    "categoria": "Enfermeira de Clínica Geral"
+}
+
+// registar medico 
+
+{
+    "cc": "123456789",
+    "nif": 987654321,
+    "nome": "Dr. Mateus Silva",
+    "data_de_nascimento": "1974-05-10",
+    "morada": "Rua Principal, 222",
+    "telefone": "91111789",
+    "genero": "Masculino",
+    "mail": "mateus.silva@example.com",
+    "senha": "mateus123",
+    "numero_de_licensa": 99999321,
+    "salario": 5000.00,
+    "premios": 1000.00,
+    "funcao": "Médico",
+    "especializacoes": ["Psiquiatra", "Urologista"]
+}
+
+//autenticar usuario 
+
+{
+    "nome":"Carla Silva",
+    "senha": "carla123"
+}
+
+// fazer agendamento 
+{
+    "medico_medical_staff_empregado_pessoa_cc": "222678119", 
+    "assistente_medical_staff_empregado_pessoa_cc": "304983321",
+    "paciente_pessoa_cc": "02177890",
+    "data_consulta": "2024-05-01",
+    "id_fatura": 122
+}
+
+
+//listar agendamentos 
+// user id 02177890
+
+
+//agendar cirurgia 
+
+
+{
+    "patient_id": "02177890",
+    "doctor": "222678119",
+    "nurses": [
+        ["123456778", "Auxiliar"],
+        ["12354321", "Fisioterapeuta"]
+    ],
+    "date": "2024-08-24",
+    "room": 307,
+    "bed": 19,
+    "discharge_date": "2024-05-26T12:45:00",
+    "assistant_id": "333312110",
+    "preco": 7000,
+    "parcelas": 1,
+    "data_limite": "2024-09-30"
+}
+
+
+// adicionar prescrição 
+{
+    "type": "appointment",
+    "event_id": 7,  // ID da consulta ou internação
+    "validity": "2024-06-01",  // Validade da prescrição
+    "medicines": [
+        {
+            "medicine": "Paracetamol",
+            "posology_dose": "2mg",
+            "posology_frequency": "2 comprimido a cada 7 horas"
+        },
+        {
+            "medicine": "Amoxicilina",
+            "posology_dose": "2mg",
+            "posology_frequency": "2 comprimido a cada 9 horas"
+        }
+    ]
+}
+
+//obter prescrição 
+// user id 02177890
+
+// executar pagamento 
+{
+    "amount": 7000,
+    "payment_method": "credit_card"
+}
+
+
+// listar top3:é so enviar a solicitação
+
+// sumario diário
+// exemplo da data correspondente: 2024-06-01
+
+// reporte mensal:é so enviar a solicitação
+
+
